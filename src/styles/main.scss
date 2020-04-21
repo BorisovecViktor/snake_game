@@ -3,5 +3,85 @@
 @import "typography";
 
 body {
+  margin: 0;
+  padding: 0;
   background: $c-gray;
+}
+
+#game {
+  display: block;
+  margin: 0 auto;
+  border: 1px rgb(4, 155, 4);
+}
+
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 200px;
+  font-size: 20px;
+  color: rgba(4, 155, 4, 1);
+  background-color: white;
+  border-radius: 10px;
+  transition: 1s ease-in;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.4);
+  z-index: 1;
+  user-select: none;
+
+  &__button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    margin: 0;
+    padding: 5px;
+    color: white;
+    background-color: rgba(4, 155, 4, 1);
+    border: 1px solid rgba(4, 155, 4, 1);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      color: rgba(4, 155, 4, 1);
+      background-color: white;
+    }
+  }
+
+  &--active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__text {
+    text-align: center;
+
+    & p {
+      margin: 5px 0;
+      color: rgb(255, 138, 95);
+    }
+  }
+}
+
+.overlay {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.3);
+  pointer-events: none;
+  transition: 0.5s ease-in;
+
+  &--active {
+    opacity: 1;
+    pointer-events: all;
+  }
 }
