@@ -1,6 +1,6 @@
 # snake_game
 
-[DEMO PAGE](https://borisovecviktor.github.io/snake_game/)
+[GAME](https://borisovecviktor.github.io/snake_game/)
 
 ### Technologies
 - HTML5/CCS3, Sass, Canvas
