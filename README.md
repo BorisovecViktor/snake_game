@@ -1,4 +1,13 @@
-# Base layout template with Gulp, SCSS and Stylelint
-1. Create a repo using this template
-1. Replace `<your_account>` and `<repo_name>` with your Github username and the new repo name
-    - [DEMO LINK](https://BorisovecViktor.github.io/js_snake/)
+# snake_game
+
+[DEMO PAGE](https://borisovecviktor.github.io/snake_game/)
+
+### Technologies
+- HTML5/CCS3, Sass, Canvas
+- JavaScript
+
+### How to run it
+1. Clone the repository git clone https://github.com/borisovecviktor/snake_game.git
+2. Go into project folder cd snake_game
+3. Run npm install
+4. Open in your Browser http://localhost:8080
